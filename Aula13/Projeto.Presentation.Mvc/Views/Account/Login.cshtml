@@ -1,0 +1,57 @@
+﻿@model Projeto.Presentation.Mvc.Models.AccountLoginViewModel
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Login</title>
+
+    <!-- css -->
+    <link href="~/css/bootstrap.css" rel="stylesheet" />
+
+
+</head>
+
+<body class="container">
+    <h4>Acesso de usuários</h4>
+    <hr/>
+
+    <div class="row">
+        <div class="col-md-4">
+            @using (Html.BeginForm())
+            {
+                <label>Login:</label>
+                @Html.TextBoxFor(model => model.Login,
+                    new { @class = "form-control", @placeholder = "Digite aqui"})
+                <span class="text-danger">
+                    @Html.ValidationMessageFor(model => model.Login)
+                </span>
+                <br />
+
+                <label>Senha:</label>
+                @Html.PasswordFor(model => model.Senha,
+                    new { @class = "form-control", @placeholder = "Digite aqui"})
+                <span class="text-danger">
+                    @Html.ValidationMessageFor(model => model.Senha)
+                </span>
+                <br />
+
+                <input type="submit" value="Acessar" class="btn btn-success" />
+                <br />
+                <br />
+
+                <strong>@ViewBag.Mensagem</strong>
+
+                
+            }
+        </div>
+    </div>
+
+</body>
+
+</html>

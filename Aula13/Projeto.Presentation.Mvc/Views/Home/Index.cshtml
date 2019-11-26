@@ -1,0 +1,81 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+
+    <!-- css -->
+    <link href="~/css/bootstrap.min.css" rel="stylesheet" />
+
+
+
+</head>
+<body class="container">
+
+    <h1>Dashboard Principal</h1>
+    <hr/>
+
+    <div class="row">
+        <div class="col-md-6">
+            <div id="grafico1"></div>
+        </div>
+        <div class="col-md-6">
+            <div id="grafico2"></div>
+        </div>
+    </div>
+
+
+    <!-- javascript -->
+    <script src="~/js/jquery-3.4.1.min.js"></script>
+    <script src="~/js/bootstrap.js"></script>
+
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/highcharts-3d.js"></script>
+    <script src="https://code.highcharts.com/modules/exporting.js"></script>
+    <script src="https://code.highcharts.com/modules/export-data.js"></script>
+
+    <script>
+        $(document).ready(function () {
+
+            //definindo os valores que serão exibidos no gráfico
+            var dados = [
+                { name: 'Excelente', data: [20] },
+                { name: 'Bom', data: [15] },
+                { name: 'Regular', data: [5] },
+                { name: 'Ruim', data: [2] },
+            ];
+
+            //tratamento para definir qual será o eixo dos valores do grafico
+            var array = [];
+            for (var i = 0; i < dados.length; i++) {
+                array.push([
+                    dados[i].name, dados[i].data[0]
+                ]);
+            }
+
+            //montando o gráfico...
+            new Highcharts.Chart({
+                chart: {
+                    type: 'pie',
+                    renderTo: 'grafico1'
+                },
+                title: {
+                    text: "Avaliação de Atendimento"
+                },
+                credits: { enabled : false},
+                series: [{
+                    data: array
+                }]
+            });
+        });
+
+    </script>
+
+</body>
+</html>
