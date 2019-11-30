@@ -1,0 +1,77 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+
+    <!-- css -->
+    <link href="~/css/bootstrap.min.css" rel="stylesheet" />
+
+
+
+</head>
+<body class="container">
+
+    <h1>Cadastro de avaliação de atendimento</h1>
+    <a href="/home/index">Página inicial</a>
+    <hr />
+
+    <div class="row">
+        <div class="col-md-4">
+            <label>Informe a nota do atendimento:</label>
+            <select id="avaliacao" class="form-control">
+                <option value="1">Excelente</option>
+                <option value="2">Bom</option>
+                <option value="3">Regular</option>
+                <option value="4">Insuficiente</option>
+            </select>
+            <br/>
+
+            <label>Comentários</label>
+            <textarea id="comentarios" class="form-control"></textarea>
+            <br/>
+
+            <button id="btncadastro" class="btn btn-success">
+                Cadastrar avaliação
+            </button>
+            <br/>
+
+            <div id="mensagem">
+
+            </div>
+        </div>
+    </div>
+
+    <script src="~/js/jquery-3.4.1.min.js"></script>
+    <script src="~/js/bootstrap.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $("#btncadastro").click(function () {
+                $("#mensagem").html("Processando, por favor aguarde...");
+
+                $.ajax({
+                    type: "POST",
+                    url: "/Home/CadastrarAvaliacao",
+                    data: {
+                        Avaliacao: $("#avaliacao").val(),
+                        Comentarios: $("#comentarios").val()
+                    },
+                    success: function (d) {
+                        $("#mensagem").html(d);
+                    },
+                    error: function (e) {
+                        $("#mensagem").html(e.responseText);
+                    }
+                });
+            })
+        })
+    </script>
+</body>
+</html>

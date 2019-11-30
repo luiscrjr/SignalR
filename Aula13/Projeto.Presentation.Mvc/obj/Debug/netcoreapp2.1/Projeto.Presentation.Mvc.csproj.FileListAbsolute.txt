@@ -22,3 +22,6 @@ C:\Users\Coti-Maq10\Desktop\lRibeiro\signalR\Aula13\Projeto.Presentation.Mvc\obj
 C:\Users\Coti-Maq10\Desktop\lRibeiro\signalR\Aula13\Projeto.Presentation.Mvc\obj\Debug\netcoreapp2.1\Projeto.Presentation.Mvc.Views.pdb
 C:\Users\Coti-Maq10\Desktop\lRibeiro\signalR\Aula13\Projeto.Presentation.Mvc\obj\Debug\netcoreapp2.1\Projeto.Presentation.Mvc.csproj.CopyComplete
 C:\Users\Coti-Maq10\Desktop\lRibeiro\signalR\Aula13\Projeto.Presentation.Mvc\obj\Debug\netcoreapp2.1\Razor\Views\Home\Index.g.cshtml.cs
+C:\Users\Coti-Maq10\Desktop\lRibeiro\signalR\Aula13\Projeto.Presentation.Mvc\bin\Debug\netcoreapp2.1\Projeto.Data.dll
+C:\Users\Coti-Maq10\Desktop\lRibeiro\signalR\Aula13\Projeto.Presentation.Mvc\bin\Debug\netcoreapp2.1\Projeto.Data.pdb
+C:\Users\Coti-Maq10\Desktop\lRibeiro\signalR\Aula13\Projeto.Presentation.Mvc\obj\Debug\netcoreapp2.1\Razor\Views\Home\CadastroAvaliacao.g.cshtml.cs
