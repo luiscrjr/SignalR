@@ -11,6 +11,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Projeto.Data.Contracts;
 using Projeto.Data.Repositories;
+using Projeto.Presentation.Mvc.Hubs;
 
 namespace Projeto.Presentation.Mvc
 {
@@ -28,6 +29,9 @@ namespace Projeto.Presentation.Mvc
         // For more information on how to configure your application, visit https://go.microsoft.com/fwlink/?LinkID=398940
         public void ConfigureServices(IServiceCollection services)
         {
+            //habilitando o signalR
+            services.AddSignalR();
+
             //habilitando o automapper
             services.AddAutoMapper(typeof(Startup));
 
@@ -61,6 +65,14 @@ namespace Projeto.Presentation.Mvc
             app.UseCookiePolicy();
             app.UseAuthentication();
             app.UseSession();
+
+            //mapear as classes hub do SignalR
+            app.UseSignalR(
+                routes=>
+                {
+                    routes.MapHub<AvaliacaoHub>("/avaliacao");
+                }
+                );
 
             //configurando o uso de rotas do MVC
             app.UseMvc(

@@ -20,7 +20,7 @@
 
     <h1>Dashboard Principal</h1>
     <a href="/home/cadastroavaliacao">Cadastrar Avaliação</a>
-    <hr/>
+    <hr />
 
     <div class="row">
         <div class="col-md-6">
@@ -41,7 +41,22 @@
     <script src="https://code.highcharts.com/modules/exporting.js"></script>
     <script src="https://code.highcharts.com/modules/export-data.js"></script>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aspnet-signalr/1.0.4/signalr.min.js"></script>
+
     <script>
+
+        //conectando no Hub
+        const connection = new signalR.HubConnectionBuilder()
+            .withUrl("/avaliacao")
+            .build();
+
+        connection.start().catch(e => console.log(e.toString()));
+
+        //escutando as mensagens qe chegam no hub
+        connection.on('Send', (mensagem) => {
+            console.log(mensagem);
+        });
+
         $(document).ready(function () {
 
             //definindo os valores que serão exibidos no gráfico
@@ -69,7 +84,7 @@
                 title: {
                     text: "Avaliação de Atendimento"
                 },
-                credits: { enabled : false},
+                credits: { enabled: false },
                 series: [{
                     data: array
                 }]

@@ -51,7 +51,17 @@
     <script src="~/js/jquery-3.4.1.min.js"></script>
     <script src="~/js/bootstrap.min.js"></script>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aspnet-signalr/1.0.4/signalr.min.js"></script>
+
     <script>
+
+        //conectando no hub criado
+        const connection = new signalR.HubConnectionBuilder()
+            .withUrl("/avaliacao")
+            .build();
+
+        connection.start().catch(e => console.log(e.toString()));
+
         $(document).ready(function () {
             $("#btncadastro").click(function () {
                 $("#mensagem").html("Processando, por favor aguarde...");
@@ -63,8 +73,14 @@
                         Avaliacao: $("#avaliacao").val(),
                         Comentarios: $("#comentarios").val()
                     },
-                    success: function (d) {
-                        $("#mensagem").html(d);
+                    success: function (data) {
+                        $("#mensagem").html(data);
+
+                        $("#avaliacao").val("1");
+                        $("#comentarios").val("");
+
+                        //enviar uma notificação para o Hub
+                        connection.invoke('Send', data)
                     },
                     error: function (e) {
                         $("#mensagem").html(e.responseText);
