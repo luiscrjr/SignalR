@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETCoreApp,Version=v2.1",
-    "signature": "49a4c23537616c189f2b73e3d433fe9c11aaef07"
+    "signature": ""
   },
   "compilationOptions": {},
   "targets": {
@@ -300,16 +300,6 @@
       "System.Security.AccessControl/4.4.0": {
         "dependencies": {
           "System.Security.Principal.Windows": "4.4.0"
-        },
-        "runtimeTargets": {
-          "runtime/unix/lib/_._": {
-            "rid": "unix",
-            "assetType": "runtime"
-          },
-          "runtime/win/lib/_._": {
-            "rid": "win",
-            "assetType": "runtime"
-          }
         }
       },
       "System.Security.Cryptography.ProtectedData/4.4.0": {
@@ -339,18 +329,7 @@
           }
         }
       },
-      "System.Security.Principal.Windows/4.4.0": {
-        "runtimeTargets": {
-          "runtime/unix/lib/_._": {
-            "rid": "unix",
-            "assetType": "runtime"
-          },
-          "runtime/win/lib/_._": {
-            "rid": "win",
-            "assetType": "runtime"
-          }
-        }
-      },
+      "System.Security.Principal.Windows/4.4.0": {},
       "System.ServiceModel.Primitives/4.4.0": {
         "dependencies": {
           "System.Private.ServiceModel": "4.4.0"
@@ -389,42 +368,42 @@
     "Antlr3.Runtime/3.5.1": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-NUWAZRcC8WQgYKp07b2HA0zdOrFG2bzcHEQ/tihcpROFZT6VdWtmGxH+Z+WQxOUWCzMcGY1bgV6qx9bO47DChg==",
+      "sha512": "sha512-ZwCEpLCLZXkjzf1lYEixp9hgVlYYk33ACHn6xjFyVhGRi2BpoYQez0qtatbetdylASWYTG+cGz0CGR4z66JM4w==",
       "path": "antlr3.runtime/3.5.1",
       "hashPath": "antlr3.runtime.3.5.1.nupkg.sha512"
     },
     "FluentNHibernate/2.1.2": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-dCN2gjRAJ7BLB5vubfsz5CILhGIH/5S7d4ylAUmhCOtjozWYGJMviQHSmPzgtjyvnpM0CExg0+rvs5NEsNrxgQ==",
+      "sha512": "sha512-JcSxfsgciJQJDEWGYp1tur4XIEBRYpWquDihFZZhFP0yF1UuXwvC/UxNGawQArw6PpLAaVDJdLZPH1Ot8+8DHQ==",
       "path": "fluentnhibernate/2.1.2",
       "hashPath": "fluentnhibernate.2.1.2.nupkg.sha512"
     },
     "Iesi.Collections/4.0.4": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-WFdKVtiaOflBNNC2GCzjSjliwKWvENROVzJEOaLsTCdlKK6Z6u/6oGcJs/ssYN7/27ebuTeeElvc/hL54kv7Cg==",
+      "sha512": "sha512-jlebSjv2a7amYfKXEUsPDSf2Yi9r0/FkvvT6Dy7ehl7z8du+dTGqKDu+fYbnE+WuIz/v3prYm1jpBljMrY1p+Q==",
       "path": "iesi.collections/4.0.4",
       "hashPath": "iesi.collections.4.0.4.nupkg.sha512"
     },
     "NHibernate/5.1.1": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-LC8ScpuPZwAuH7GFEE/pvNk1uC5NOEwvm7wpPmegib3NHHX2v7XcYrLFf1Cy4vuaJXxOFjRiQ1ak3WJW/5c+3g==",
+      "sha512": "sha512-x8zFdjzEfSAzt1uB7Mq9X1hsrGEM1f23HqtUwt2FwF4731L5LV06MwDW5qneSAA95YDhnA44TzarlhiiWLAvEw==",
       "path": "nhibernate/5.1.1",
       "hashPath": "nhibernate.5.1.1.nupkg.sha512"
     },
     "Remotion.Linq/2.1.2": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-Cid+x6ItSesJSB+8zA9evWWBH3Jo5XtIUt6FUSu99BipVzWBA/Zi2bT6LMN/WIjZh/2rgeRlgXpa5WQoatG01A==",
+      "sha512": "sha512-iEHT2fNOuTxhchbaOks+9Ea4YKvp454T/2mZm7CiUqIbUFl7ruK+2SVSvogkBODdxyk7eCpOAQSsowNxO8kKaw==",
       "path": "remotion.linq/2.1.2",
       "hashPath": "remotion.linq.2.1.2.nupkg.sha512"
     },
     "Remotion.Linq.EagerFetching/2.1.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-csp10oQHPrjvBISWX/MJJXo4RJPECOzPbWmxMU3i5AKDATr7NSY1VlFuXifTYy69bAl2w7OlPojw2CPPPNxk6g==",
+      "sha512": "sha512-6tVDAvNF34Vow8lU54bVArNrMoSeP21+DVyQ10ogEZocYnv34ZTcLqyQxLI8oeOl9y/kbF1jmmztMQL7FxgSTQ==",
       "path": "remotion.linq.eagerfetching/2.1.0",
       "hashPath": "remotion.linq.eagerfetching.2.1.0.nupkg.sha512"
     },
@@ -438,7 +417,7 @@
     "System.Configuration.ConfigurationManager/4.4.1": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-LoSjM/kLDpyLyoGsmwS5oVMRzHf/0XHkRpr3QZu/HuAv6Sfk919usTMLqD9N9VK3S4Q2+bd3tKJ0ko4MYFfq4Q==",
+      "sha512": "sha512-jz3TWKMAeuDEyrPCK5Jyt4bzQcmzUIMcY9Ud6PkElFxTfnsihV+9N/UCqvxe1z5gc7jMYAnj7V1COMS9QKIuHQ==",
       "path": "system.configuration.configurationmanager/4.4.1",
       "hashPath": "system.configuration.configurationmanager.4.4.1.nupkg.sha512"
     },
@@ -487,7 +466,7 @@
     "System.Net.Http.WinHttpHandler/4.4.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-YqwobZ4S2NccFweRdD53iBQL+tI5BtplnjpLWE5YEN5f03NQzSjSUKjbAuvSeW9W95SM73ua+KqvdqCjlK8Ctw==",
+      "sha512": "sha512-ZmsFZIZ4PL2UfUlfj4KCzzAGGE2SF39ENIqtvfgu0bwMEAe3J3CqZr765E2W6eQQtNK08/8DpHcsA0sAKZdEtA==",
       "path": "system.net.http.winhttphandler/4.4.0",
       "hashPath": "system.net.http.winhttphandler.4.4.0.nupkg.sha512"
     },
@@ -501,7 +480,7 @@
     "System.Private.ServiceModel/4.4.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-k0c8LdxCWUzUfmSs0lgS3W8hor2c0LwZT4vkQ6xQ3BeFnMAJO+XAkEcn7bTKdSDt4j53tPFNTqNwsb2xtWVt5g==",
+      "sha512": "sha512-lED0s9Lfo2TdniGlFY2rdK1wygFJ7dPRaTHR2Z409nGWfFG1YMuAlrfMhSeYFJ5pbffAlOBxb8hvoYxP3LJ6mg==",
       "path": "system.private.servicemodel/4.4.0",
       "hashPath": "system.private.servicemodel.4.4.0.nupkg.sha512"
     },
@@ -515,7 +494,7 @@
     "System.Reflection.DispatchProxy/4.4.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-OMBZ2YO0MOoi8yarOmXQVLso5RW9S62liNXJ0UjANonTBA4n/H1hn8A90BRNXdwbwIlPKIjis2G2wreukTRSWA==",
+      "sha512": "sha512-xK6JE0mpsBD+T0qu3V6dmVRa06PxAvIIM/zSjouqP7Sk6X+FQj+9XFRz9GmZk9aJGMU1LX6AgTZIlsYZ64QKsw==",
       "path": "system.reflection.dispatchproxy/4.4.0",
       "hashPath": "system.reflection.dispatchproxy.4.4.0.nupkg.sha512"
     },
@@ -599,35 +578,35 @@
     "System.Security.AccessControl/4.4.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-UPF+s4KctOCpk7dpBe3QtZ1AzFEHKdhOtiNDLxGnD/nxKsVbsow5OClTy8c7yOObw/Evbv95xRwZfYZ4wLV4fA==",
+      "sha512": "sha512-2NRFPX/V81ucKQmqNgGBZrKGH/5ejsvivSGMRum0SMgPnJxwhuNkzVS1+7gC3R2X0f57CtwrPrXPPSe6nOp82g==",
       "path": "system.security.accesscontrol/4.4.0",
       "hashPath": "system.security.accesscontrol.4.4.0.nupkg.sha512"
     },
     "System.Security.Cryptography.ProtectedData/4.4.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-WwEexvBd+17yfY7fcS+fBGl+HADEfCJuKeDJqBT7D6j6vKwYvfLyGuq2y/MmrKORC6mbYwth7kjinO1mPhTL3g==",
+      "sha512": "sha512-cJV7ScGW7EhatRsjehfvvYVBvtiSMKgN8bOVI0bQhnF5bU7vnHVIsH49Kva7i7GWaWYvmEzkYVk1TC+gZYBEog==",
       "path": "system.security.cryptography.protecteddata/4.4.0",
       "hashPath": "system.security.cryptography.protecteddata.4.4.0.nupkg.sha512"
     },
     "System.Security.Permissions/4.4.1": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-tXBMO8OJEuw9c4KjLj4fwxJusely90azF24Uktz/evgvowAtU963HYl+G93gaRZr6pvYvsSPrjkN4+2pdVUbgw==",
+      "sha512": "sha512-l8IxQ9mEAkKv85uoEcjcYhrh+yTLZtLgNqb2T7QChTdKXh45EUnmKd+Ckdt1D+VYW2dk2Pb5MT+0zwQ74Jd2Xg==",
       "path": "system.security.permissions/4.4.1",
       "hashPath": "system.security.permissions.4.4.1.nupkg.sha512"
     },
     "System.Security.Principal.Windows/4.4.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-ynC5BKYwhgON6WH/yPM5ZLKc19wqC13A5fl4hZa5Lf8pQwv1YmbCPKGualWSRhEoOVWH2FzZhOXauER6al4Upg==",
+      "sha512": "sha512-pP+AOzt1o3jESOuLmf52YQTF7H3Ng9hTnrOESQiqsnl2IbBh1HInsAMHYtoh75iUYV0OIkHmjvveraYB6zM97w==",
       "path": "system.security.principal.windows/4.4.0",
       "hashPath": "system.security.principal.windows.4.4.0.nupkg.sha512"
     },
     "System.ServiceModel.Primitives/4.4.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-oyUXqZjNKwLgofomcCt+E3Z2Ly7FAfK7rFYYjcdbZyvyHbXLrZjOf7ldo6iy7CkdSb0k/lnsGA/EkAehsZjh0A==",
+      "sha512": "sha512-6rATyMUeeOPVY7XzoneoyzGKVCc62gGl/A6SKrlY0dX0bnMprIrXZF1AXy9Y8ne49JU/2RGGeldFbATYONc/XQ==",
       "path": "system.servicemodel.primitives/4.4.0",
       "hashPath": "system.servicemodel.primitives.4.4.0.nupkg.sha512"
     },

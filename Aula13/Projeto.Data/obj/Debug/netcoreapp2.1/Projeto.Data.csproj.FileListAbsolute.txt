@@ -7,3 +7,11 @@ C:\Users\Coti-Maq10\Desktop\lRibeiro\signalR\Aula13\Projeto.Data\obj\Debug\netco
 C:\Users\Coti-Maq10\Desktop\lRibeiro\signalR\Aula13\Projeto.Data\bin\Debug\netcoreapp2.1\Projeto.Data.pdb
 C:\Users\Coti-Maq10\Desktop\lRibeiro\signalR\Aula13\Projeto.Data\obj\Debug\netcoreapp2.1\Projeto.Data.dll
 C:\Users\Coti-Maq10\Desktop\lRibeiro\signalR\Aula13\Projeto.Data\obj\Debug\netcoreapp2.1\Projeto.Data.pdb
+C:\Proj\signalR\Aula13\Projeto.Data\bin\Debug\netcoreapp2.1\Projeto.Data.deps.json
+C:\Proj\signalR\Aula13\Projeto.Data\bin\Debug\netcoreapp2.1\Projeto.Data.dll
+C:\Proj\signalR\Aula13\Projeto.Data\bin\Debug\netcoreapp2.1\Projeto.Data.pdb
+C:\Proj\signalR\Aula13\Projeto.Data\obj\Debug\netcoreapp2.1\Projeto.Data.csprojAssemblyReference.cache
+C:\Proj\signalR\Aula13\Projeto.Data\obj\Debug\netcoreapp2.1\Projeto.Data.AssemblyInfoInputs.cache
+C:\Proj\signalR\Aula13\Projeto.Data\obj\Debug\netcoreapp2.1\Projeto.Data.AssemblyInfo.cs
+C:\Proj\signalR\Aula13\Projeto.Data\obj\Debug\netcoreapp2.1\Projeto.Data.dll
+C:\Proj\signalR\Aula13\Projeto.Data\obj\Debug\netcoreapp2.1\Projeto.Data.pdb

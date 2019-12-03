@@ -25,6 +25,11 @@ namespace Projeto.Presentation.Mvc.Controllers
             return View();
         }
 
+        public IActionResult IndexPooling()
+        {
+            return View();
+        }
+
         public JsonResult CadastrarAvaliacao(CadastroAvaliacaoViewModel model,
             [FromServices] IMapper mapper, [FromServices] IAvaliacaoAtendimentoRepository repository)
         {
