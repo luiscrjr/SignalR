@@ -54,3 +54,4 @@ C:\Proj\signalR\Aula13\Projeto.Presentation.Mvc\obj\Debug\netcoreapp2.1\Projeto.
 C:\Proj\signalR\Aula13\Projeto.Presentation.Mvc\obj\Debug\netcoreapp2.1\Projeto.Presentation.Mvc.dll
 C:\Proj\signalR\Aula13\Projeto.Presentation.Mvc\obj\Debug\netcoreapp2.1\Projeto.Presentation.Mvc.pdb
 C:\Proj\signalR\Aula13\Projeto.Presentation.Mvc\obj\Debug\netcoreapp2.1\Razor\Views\Home\IndexPooling.cshtml.g.cs
+C:\Users\Coti-Maq10\Desktop\lRibeiro\signalR\Aula13\Projeto.Presentation.Mvc\obj\Debug\netcoreapp2.1\Razor\Views\Home\IndexPooling.g.cshtml.cs

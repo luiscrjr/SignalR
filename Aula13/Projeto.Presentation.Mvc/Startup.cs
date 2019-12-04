@@ -58,6 +58,8 @@ namespace Projeto.Presentation.Mvc
                 app.UseDeveloperExceptionPage();
             }
 
+            app.UseMiddleware<NoCache>();
+
             //configuração para habilitar o uso do diretorio wwwroot
             app.UseStaticFiles();
 

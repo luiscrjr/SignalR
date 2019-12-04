@@ -21,7 +21,7 @@ namespace Projeto.Data.Util
                 sessionFactory = Fluently.Configure()
                     .Database(MsSqlConfiguration.MsSql2012.ConnectionString(connectionString))
                     .Mappings(m => m.FluentMappings.Add<AvaliacaoAtendimentoMap>())
-                    .ExposeConfiguration(cfg => new SchemaExport(cfg).Execute(true, true, false))
+                    //.ExposeConfiguration(cfg => new SchemaExport(cfg).Execute(true, true, false))
                     .BuildSessionFactory();
             }
 

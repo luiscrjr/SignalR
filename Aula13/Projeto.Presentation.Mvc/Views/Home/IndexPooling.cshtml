@@ -13,7 +13,77 @@
     <!-- css -->
     <link href="~/css/bootstrap.min.css" rel="stylesheet" />
 
+    <style>
+        #snackbar {
+            visibility: hidden;
+            min-width: 250px;
+            margin-left: -125px;
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            border-radius: 2px;
+            padding: 16px;
+            position: fixed;
+            z-index: 1;
+            left: 50%;
+            bottom: 30px;
+            font-size: 17px;
+        }
 
+            #snackbar.show {
+                visibility: visible;
+                -webkit-animation: fadein 1s, fadeout 1s 2.5s;
+                animation: fadein 1s, fadeout 1s 2.5s;
+            }
+
+        @@-webkit-keyframes fadein {
+            from {
+                bottom: 0;
+                opacity: 0;
+            }
+
+            to {
+                bottom: 30px;
+                opacity: 1;
+            }
+        }
+
+        @@keyframes fadein {
+            from {
+                bottom: 0;
+                opacity: 0;
+            }
+
+            to {
+                bottom: 30px;
+                opacity: 1;
+            }
+        }
+
+        @@-webkit-keyframes fadeout {
+            from {
+                bottom: 30px;
+                opacity: 1;
+            }
+
+            to {
+                bottom: 0;
+                opacity: 0;
+            }
+        }
+
+        @@keyframes fadeout {
+            from {
+                bottom: 30px;
+                opacity: 1;
+            }
+
+            to {
+                bottom: 0;
+                opacity: 0;
+            }
+        }
+    </style>
 
 </head>
 <body class="container">
@@ -45,52 +115,39 @@
 
     <script>
 
-        var myVar = setInterval(myTimer, 2000);
+        var reload = setInterval(cronometro, 2000);
 
-        function myTimer() {
+        //Continuar com implementação do pooling
+        var dadosAnteriores;
+        var dadosAtuais;
+
+        function cronometro() {
           var d = new Date();
-            console.log("teste");
-
+            
             $.ajax({
                     type: "GET",
                     url: "/Home/ObterGraficoDeAvaliacoes",
-                    success: function (data) {
-                        $("#mensagem").html(data);
+                    success: function (dados) {
+                        dadosAtuais = dados;
 
-                        $("#avaliacao").val("1");
-                        $("#comentarios").val("");
-
-                        console.log(data);
-
+                        if (dadosAnteriores != dadosAtuais) {
+                            montarGraficoDeAvaliacoes(dados);
+                        }
                     },
                     error: function (e) {
                         console.log(e.responseText);
                     }
             });
 
-        }
+            console.log("Nova requisição realizada");
 
-        //conectando no Hub
-        const connection = new signalR.HubConnectionBuilder()
-            .withUrl("/avaliacao")
-            .build();
+            console.log(dadosAnteriores);
+            console.log(dadosAtuais);
 
-        connection.start().catch(e => console.log(e.toString()));
+        };
 
-        //escutando as mensagens qe chegam no hub
-        connection.on('Send', (mensagem) => {
-            console.log(mensagem);
-        });
 
-        $(document).ready(function () {
-
-            //definindo os valores que serão exibidos no gráfico
-            var dados = [
-                { name: 'Excelente', data: [20] },
-                { name: 'Bom', data: [15] },
-                { name: 'Regular', data: [5] },
-                { name: 'Ruim', data: [2] },
-            ];
+        function montarGraficoDeAvaliacoes(dados) {
 
             //tratamento para definir qual será o eixo dos valores do grafico
             var array = [];
@@ -114,7 +171,47 @@
                     data: array
                 }]
             });
+
+        };
+
+        //função para exibir o conteúdo do gráfico de pizza
+        function obterGraficoDeAvaliacoes() {
+
+            $.ajax({
+                type: "GET",
+                url: "/Home/ObterGraficoDeAvaliacoes",
+                success: function (dados) {
+                    montarGraficoDeAvaliacoes(dados);
+                },
+                error: function (e) {
+                    console.log(e);
+                }
+            });
+        };
+
+        $(document).ready(function () {
+
+            $.ajax({
+                type: "GET",
+                url: "/Home/ObterGraficoDeAvaliacoes",
+                success: function (dados) {
+                    dadosAnteriores = dados;
+                    dadosAtuais = dados;
+                },
+                error: function (e) {
+                    console.log(e.responseText);
+                }
+            });
+
+            obterGraficoDeAvaliacoes();
         });
+
+        //exibir toast
+        function ShowToast() {
+            var x = document.getElementById("snackbar")
+            x.className = "show";
+            setTimeout(function () { x.className = x.className.replace("show", ""); }, 3000);
+        }
 
     </script>
 

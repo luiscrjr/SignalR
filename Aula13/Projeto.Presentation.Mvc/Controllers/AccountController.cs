@@ -47,5 +47,12 @@ namespace Projeto.Presentation.Mvc.Controllers
             }
             return View();
         }
+
+        public IActionResult Logout()
+        {
+            //destruir o acesso
+            HttpContext.SignOutAsync(CookieAuthenticationDefaults.AuthenticationScheme);
+            return RedirectToAction("Login", "Account");
+        }
     }
 }
