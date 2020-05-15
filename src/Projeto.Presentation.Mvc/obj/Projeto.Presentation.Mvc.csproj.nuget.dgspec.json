@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Proj\\signalR\\src\\Projeto.Presentation.Mvc\\Projeto.Presentation.Mvc.csproj": {}
+    "C:\\Proj\\SignalR\\src\\Projeto.Presentation.Mvc\\Projeto.Presentation.Mvc.csproj": {}
   },
   "projects": {
-    "C:\\Proj\\signalR\\src\\Projeto.Data\\Projeto.Data.csproj": {
+    "C:\\Proj\\SignalR\\src\\Projeto.Data\\Projeto.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Proj\\signalR\\src\\Projeto.Data\\Projeto.Data.csproj",
+        "projectUniqueName": "C:\\Proj\\SignalR\\src\\Projeto.Data\\Projeto.Data.csproj",
         "projectName": "Projeto.Data",
-        "projectPath": "C:\\Proj\\signalR\\src\\Projeto.Data\\Projeto.Data.csproj",
-        "packagesPath": "C:\\Users\\Luis\\.nuget\\packages\\",
-        "outputPath": "C:\\Proj\\signalR\\src\\Projeto.Data\\obj\\",
+        "projectPath": "C:\\Proj\\SignalR\\src\\Projeto.Data\\Projeto.Data.csproj",
+        "packagesPath": "C:\\Users\\LUICLJUNIOR\\.nuget\\packages\\",
+        "outputPath": "C:\\Proj\\SignalR\\src\\Projeto.Data\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\Luis\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\LUICLJUNIOR\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -62,24 +62,24 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.100\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Proj\\signalR\\src\\Projeto.Presentation.Mvc\\Projeto.Presentation.Mvc.csproj": {
+    "C:\\Proj\\SignalR\\src\\Projeto.Presentation.Mvc\\Projeto.Presentation.Mvc.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Proj\\signalR\\src\\Projeto.Presentation.Mvc\\Projeto.Presentation.Mvc.csproj",
+        "projectUniqueName": "C:\\Proj\\SignalR\\src\\Projeto.Presentation.Mvc\\Projeto.Presentation.Mvc.csproj",
         "projectName": "Projeto.Presentation.Mvc",
-        "projectPath": "C:\\Proj\\signalR\\src\\Projeto.Presentation.Mvc\\Projeto.Presentation.Mvc.csproj",
-        "packagesPath": "C:\\Users\\Luis\\.nuget\\packages\\",
-        "outputPath": "C:\\Proj\\signalR\\src\\Projeto.Presentation.Mvc\\obj\\",
+        "projectPath": "C:\\Proj\\SignalR\\src\\Projeto.Presentation.Mvc\\Projeto.Presentation.Mvc.csproj",
+        "packagesPath": "C:\\Users\\LUICLJUNIOR\\.nuget\\packages\\",
+        "outputPath": "C:\\Proj\\SignalR\\src\\Projeto.Presentation.Mvc\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\Luis\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\LUICLJUNIOR\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -92,8 +92,8 @@
         "frameworks": {
           "netcoreapp2.1": {
             "projectReferences": {
-              "C:\\Proj\\signalR\\src\\Projeto.Data\\Projeto.Data.csproj": {
-                "projectPath": "C:\\Proj\\signalR\\src\\Projeto.Data\\Projeto.Data.csproj"
+              "C:\\Proj\\SignalR\\src\\Projeto.Data\\Projeto.Data.csproj": {
+                "projectPath": "C:\\Proj\\SignalR\\src\\Projeto.Data\\Projeto.Data.csproj"
               }
             }
           }
@@ -151,7 +151,7 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.100\\RuntimeIdentifierGraph.json"
         }
       }
     }
